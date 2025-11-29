@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prashant Singh | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Floating background blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <header class="header" id="home">
+      <nav class="nav">
+        <div class="logo">PS<span>.</span></div>
+        <button class="nav-toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero reveal">
+        <div class="hero-text">
+          <p class="hero-tag">Software Engineer • B.Tech CSE</p>
+          <h1>Hi, I'm <span class="accent">Prashant Singh</span></h1>
+          <h2
+            class="typing"
+            data-text='["Software Engineer","Full-Stack Web Developer","Problem Solver & Gamer"]'
+          >
+            Software Engineer
+          </h2>
+          <p class="hero-desc">
+            First-year B.Tech CSE student who doesn’t just study code — I ship
+            it. I love turning ideas into clean, responsive web experiences and
+            building real-world projects that actually solve problems.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary"
+              ><i class="fa-solid fa-rocket"></i> View Projects</a
+            >
+            <a href="#contact" class="btn ghost"
+              ><i class="fa-solid fa-envelope"></i> Hire Me</a
+            >
+          </div>
+          <div class="hero-meta">
+            <span
+              ><i class="fa-solid fa-location-dot"></i> Mohali / Pune,
+              India</span
+            >
+            <span
+              ><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE, Chandigarh
+              University (2025-2029)</span
+            >
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-card">
+            <img src="assets/profile.jpg" alt="Prashant Singh" />
+            <div class="photo-glow"></div>
+            <div class="status-pill">
+              <span class="dot"></span> Open to Internships
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="section-heading reveal">
+          <h2>About <span class="accent">Me</span></h2>
+          <p>Who I am &amp; what I do</p>
+        </div>
+        <div class="about-grid reveal">
+          <div class="about-card glass">
+            <h3>Profile</h3>
+            <p>
+              First-year <b>B.Tech CSE</b> student who doesn’t just study code —
+              I ship it. Led a team of 5 to 1st place in Flowjam 2025 (out of
+              500+ teams) by designing <b>Hawkeye</b>, a real-world drone
+              intrusion prevention system.
+            </p>
+            <p>
+              Solo-built a pixel-perfect multi-page <b>Amazon clone</b> with
+              working authentication and a responsive To-Do app that thousands
+              of freshers only talk about.
+            </p>
+            <p>
+              When I’m not turning caffeine into clean code using
+              <b>HTML, CSS, JavaScript, and C</b>, I’m pushing live projects to
+              GitHub and learning the next tool that will make me irreplaceable.
+              Currently hunting for internships where I can solve actual
+              problems instead of just assignments.
+            </p>
+          </div>
+
+          <div class="about-card glass">
+            <h3>Education</h3>
+            <ul class="timeline">
+              <li>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Chandigarh University</h4>
+                  <span class="timeline-sub"
+                    >B.Tech – Computer Science &amp; Engineering</span
+                  >
+                  <span class="timeline-date">2025 – 2029 (Expected)</span>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Nowrosjee Wadia College, Pune</h4>
+                  <span class="timeline-sub"
+                    >Higher Secondary Certificate (HSC)</span
+                  >
+                  <span class="timeline-date">2024 – 2025</span>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Vidyavati Public Central School</h4>
+                  <span class="timeline-sub"
+                    >Secondary School Certificate (SSC)</span
+                  >
+                  <span class="timeline-date">2023 – 2024</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-card glass">
+            <h3>Quick Info</h3>
+            <ul class="info-list">
+              <li>
+                <i class="fa-solid fa-user"></i> Software Engineer • Web
+                Developer
+              </li>
+              <li>
+                <i class="fa-solid fa-code"></i> HTML, CSS, JavaScript, C,
+                React, Tailwind
+              </li>
+              <li>
+                <i class="fa-solid fa-gamepad"></i> Loves gaming &amp; building
+                game-related tools
+              </li>
+              <li>
+                <i class="fa-solid fa-bullseye"></i> Goal: Work on impactful
+                developer tools &amp; products
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="section-heading reveal">
+          <h2>Featured <span class="accent">Projects</span></h2>
+          <p>Things I’ve actually shipped</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal glass tilt">
+            <span class="project-tag research">Research • ML</span>
+            <h3>Heart Disease Prediction Research</h3>
+            <p>
+              Research paper focused on predicting heart disease risk using
+              patient data, exploring model accuracy, interpretability, and
+              real-world deployment challenges.
+            </p>
+            <ul class="project-meta">
+              <li>
+                <i class="fa-solid fa-brain"></i> Data-driven risk analysis
+              </li>
+              <li>
+                <i class="fa-solid fa-heart-pulse"></i> Healthcare focused
+              </li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal glass tilt">
+            <span class="project-tag fullstack">Full-Stack</span>
+            <h3>Heart Disease Predictor Tool</h3>
+            <p>
+              Interactive web tool that detects probability of heart disease
+              using
+              <b>HTML, CSS, Tailwind CSS, React, JavaScript</b>. Designed for
+              speed, clarity, and ease of use for non-technical users.
+            </p>
+            <ul class="project-meta">
+              <li>
+                <i class="fa-solid fa-gauge"></i> Real-time risk calculation
+              </li>
+              <li>
+                <i class="fa-solid fa-mobile-screen"></i> Fully responsive UI
+              </li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal glass tilt">
+            <span class="project-tag award">Award-Winning</span>
+            <h3>Hawkeye – Drone Restriction System</h3>
+            <p>
+              Built for Flowjam 2025, Hawkeye is an unauthorized drone intrusion
+              prevention system. Our team of 5 won
+              <b>1st place (out of 500+ teams)</b> with a solution that detects
+              and responds to illegal drone activity.
+            </p>
+            <ul class="project-meta">
+              <li>
+                <i class="fa-solid fa-trophy"></i> Flowjam 2025 – 1st Place
+              </li>
+              <li>
+                <i class="fa-solid fa-people-group"></i> Team lead (5 members)
+              </li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal glass tilt">
+            <span class="project-tag webapp">Web App</span>
+            <h3>To-Do List Web Application</h3>
+            <p>
+              Clean, responsive to-do app built with
+              <b>HTML, CSS, JavaScript</b>. Focused on subtle animations,
+              keyboard shortcuts, and a distraction-free layout.
+            </p>
+            <ul class="project-meta">
+              <li>
+                <i class="fa-solid fa-list-check"></i> Productivity focused
+              </li>
+              <li><i class="fa-solid fa-cloud"></i> Deploy-ready</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal glass tilt">
+            <span class="project-tag ecommerce">E-Commerce</span>
+            <h3>Amazon Clone (Multi-Page)</h3>
+            <p>
+              A pixel-perfect multi-page Amazon-inspired e-commerce site with
+              working authentication flow and a live demo using
+              <b>HTML, CSS, JavaScript</b>.
+            </p>
+            <ul class="project-meta">
+              <li><i class="fa-solid fa-cart-shopping"></i> Add-to-cart UX</li>
+              <li>
+                <i class="fa-solid fa-clone"></i> Realistic layout &amp; styling
+              </li>
+            </ul>
+            <div class="project-links">
+              <!-- Replace with your live link later -->
+              <a href="https://github.com/prashant-singh930" target="_blank">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <div class="section-heading reveal">
+          <h2>Tech <span class="accent">Skills</span></h2>
+          <p>Tools I work with (so far)</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skills-card glass reveal">
+            <h3>Languages &amp; Frontend</h3>
+            <div class="skill">
+              <div class="skill-header">
+                <span>C</span><span class="skill-value">35%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="35"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-header">
+                <span>HTML</span><span class="skill-value">100%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="100"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-header">
+                <span>CSS</span><span class="skill-value">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-header">
+                <span>JavaScript</span><span class="skill-value">50%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="50"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-card glass reveal">
+            <h3>Frameworks &amp; Tools</h3>
+            <div class="skill">
+              <div class="skill-header">
+                <span>React</span><span class="skill-value">40%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="40"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-header">
+                <span>Tailwind CSS</span><span class="skill-value">45%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="45"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-header">
+                <span>Git &amp; GitHub</span
+                ><span class="skill-value">25%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="25"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-header">
+                <span>Problem Solving</span><span class="skill-value">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="60"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-card glass reveal">
+            <h3>What I’m Learning Next</h3>
+            <ul class="info-list">
+              <li><i class="fa-solid fa-check"></i> Advanced React patterns</li>
+              <li>
+                <i class="fa-solid fa-check"></i> Backend with Node.js &amp;
+                Express
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i> Cloud deployment &amp; CI/CD
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i> Deeper DSA for interviews
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="section-heading reveal">
+          <h2>Let’s <span class="accent">Talk</span></h2>
+          <p>
+            Internships, projects, or just geeking out about code &amp; games
+          </p>
+        </div>
+
+        <div class="contact-grid reveal">
+          <div class="contact-card glass">
+            <h3>Contact Info</h3>
+            <ul class="info-list">
+              <li><i class="fa-solid fa-phone"></i> +91 8966010035</li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:devmail.prashant@gmail.com"
+                  >devmail.prashant@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/prashant-singh930" target="_blank"
+                  >github.com/prashant-singh930</a
+                >
+              </li>
+            </ul>
+            <p class="small">
+              Prefer email or a quick DM on GitHub. I reply faster than your
+              build pipeline.
+            </p>
+          </div>
+
+          <form
+            class="contact-card glass contact-form"
+            onsubmit="return false;"
+          >
+            <h3>Quick Message (Demo)</h3>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="Tell me about the project..."
+                required
+              ></textarea>
+            </div>
+            <button class="btn primary full" id="fake-submit">
+              <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p class="form-note" id="form-note"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Prashant Singh. Built with ❤️, HTML, CSS &amp;
+        JavaScript.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
