@@ -80,12 +80,43 @@ window.addEventListener("scroll", () => {
 const fakeSubmit = document.getElementById("fake-submit");
 const formNote = document.getElementById("form-note");
 
-if (fakeSubmit) {
-  fakeSubmit.addEventListener("click", () => {
-    formNote.textContent =
-      "Thanks for reaching out! This is a demo form — email me directly at devmail.prashant@gmail.com.";
-  });
-}
+const BOT_TOKEN = "8416211853:AAGAyvrYiN_p1O1I_ioBUBcZewTyC1cfN9Q";
+const CHAT_ID = "5822439843";
+
+fakeSubmit.addEventListener("click", () => {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  if (!name || !email || !message) {
+    formNote.textContent = "Please fill all fields.";
+    return;
+  }
+
+  const text = `
+📩 New Portfolio Message
+
+👤 Name: ${name}
+📧 Email: ${email}
+💬 Message:
+${message}
+  `;
+
+  fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      chat_id: CHAT_ID,
+      text: text,
+    }),
+  })
+    .then(() => {
+      formNote.textContent = "Message sent successfully!";
+    })
+    .catch(() => {
+      formNote.textContent = "Failed to send message.";
+    });
+});
 
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
